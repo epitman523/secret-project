@@ -1,0 +1,46 @@
+/*----------------------
+        IMPORTS
+-----------------------*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+/*----------------------
+        GLOBALS
+-----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    @include roboto(light);
+    font-size: 1.6rem;
+
+    img {
+        width: 100%;
+        line-height: 0;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 140rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2.5rem;
+    clear: both;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
